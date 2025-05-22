@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.min.js"></script>
+        <script src="../js/cadastro.js"></script>
+        <link rel="stylesheet" href="../css/cadastro.css">
+    </head>
+    <body>
+        <div class="pagina">
+            <div class="pagina-container">
+                <div class="pagina-logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <div class="pagina-titulo">
+                    <label for="titulo">Cadastrar-se</label>
+                </div>
+                <div class="pagina-formulario">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email">
+                    <span id="email-msg" style="color: red;"></span>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" id="senha" name="senha">
+                    <span id="senha1-msg" style="color: red;"></span>
+
+                    <label for="confirma-senha">Confirma senha:</label>
+                    <input type="password" placeholder="Confirme sua senha" id="senha-rep" name="senha-rep">
+                    <span id="senha2-msg" style="color: red;"></span>
+
+                    <button type="button" onclick="cadastrar()">Cadastrar</button>
+
+                    <p>Já possui uma conta? <a href="login.html">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

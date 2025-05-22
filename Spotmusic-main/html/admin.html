@@ -1,0 +1,40 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin | Spotmusic</title>
+  <link rel="stylesheet" href="../css/admin.css">
+  <script src="../js/admin.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../images/logo.png" alt="Spotmusic Logo" class="logo">
+      <h1>Admin - Spotmusic</h1>
+    </header>
+
+    <main>
+      <section class="upload-section">
+        <h2>Adicionar Nova Música</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+          <label for="titulo">Título da música:</label>
+          <input type="text" name="titulo" id="titulo" required>
+
+          <label for="arquivo">Arquivo de Áudio (MP3):</label>
+          <input type="file" name="arquivo" id="arquivo" accept="audio/mp3" required>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section class="lista-musicas">
+        <h2>Músicas Enviadas</h2>
+        <ul id="listaMusicas">
+          <!-- Lista de músicas será preenchida via JS -->
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

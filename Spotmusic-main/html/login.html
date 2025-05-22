@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.min.js"></script>
+        <script src="../js/login.js"></script>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <div class="pagina">
+            <div class="pagina-container">
+
+                <div class="pagina-logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+
+                <div class="pagina-titulo">
+                    <label for="titulo">Login</label>
+                </div>
+
+                <div class="pagina-formulario">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email">
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" id="senha" name="senha">
+
+                    <button type="button" onclick="login()">Entrar</button>
+
+                    <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
